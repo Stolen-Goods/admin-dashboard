@@ -20,9 +20,28 @@
     background-color: rgb(0, 145, 255);
     color: white;
     grid-row: 1 / 3;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard {
+    display: flex;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
 }
 
 #dashboard, .home {
@@ -40,10 +59,24 @@
 
 .intro {
     font-weight: bold;
+    flex: 1;
 }
 
 #main-content {
     background-color: rgb(219, 225, 230); 
+}
+
+.badges {
+    height: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#project {
+    margin: 1rem 0 1rem;
+    position: relative;
+    left: 1rem;
 }
 
 .search {
@@ -74,7 +107,7 @@
     font-size: .9rem; 
 }
 
-#announcments, #trending {
+#maintain, #trending {
     width: 75%;
 }
 
@@ -93,14 +126,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .flex-container2 {
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
-    margin-left: 4rem;
+    align-items: center;
+    margin: 2rem 0 1rem;
+}
+
+.flex-container2 > img {
+    margin: 0 2rem;
 }
 
 .flex-container3 {
@@ -114,12 +150,18 @@
     display: inline-block;
 }
 
-#announcments {
+#announcments, #trend {
     display: inline-block;
-    text-align: left;
+    position: relative;
+    left: 36.5rem;
 }
 
-#announcments > p {
+#trend {
+    left: 28rem;
+    top: 34.5rem;
+}
+
+#maintain > p {
     font-size: .6rem;
 }
 
@@ -129,4 +171,12 @@ img {
 
 .pfp {
     border-radius: 50%;
+}
+
+.intro > img {
+    margin-right: 1rem;
+}
+
+.socials {
+    padding: .5rem;
 }
